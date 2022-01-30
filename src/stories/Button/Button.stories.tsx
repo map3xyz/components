@@ -43,7 +43,7 @@ LargeTertiary.args = {
   type: "button",
 };
 
-const All = () => {
+export const All = () => {
   return (
     <div className="flex gap-6 items-start flex-col" style={{ width: "500px" }}>
       <div className="flex gap-2 items-start justify-between w-full">
