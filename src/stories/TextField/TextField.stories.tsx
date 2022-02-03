@@ -31,6 +31,7 @@ export const InForm = () => {
   return (
     <div className="w-56">
       <TextField
+        id="name"
         register={register("name", {
           required: "This field is required",
           maxLength: { value: 20, message: "Name cannot exceed 20 characters" },

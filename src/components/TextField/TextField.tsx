@@ -3,7 +3,7 @@ import { UseFormRegisterReturn } from "react-hook-form";
 
 export type TextFieldProps = {
   label?: string;
-  id?: string;
+  id: string;
   register: UseFormRegisterReturn;
   isDisabled?: boolean;
   isRequired?: boolean;
