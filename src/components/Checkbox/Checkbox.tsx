@@ -88,7 +88,7 @@ const Checkbox = <T extends FieldValues>({
               style={{ width: "0.8em", height: "0.8em" }}
             >
               <div
-                className={cx("w-full h-full transition-all", {
+                className={cx("w-full h-full transition-colors", {
                   "hover:bg-indigo-200": !field.value && !isDisabled,
                   "hover:bg-indigo-900": field.value && !isDisabled,
                   "bg-indigo-700": field.value,
