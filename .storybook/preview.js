@@ -1,4 +1,5 @@
 import "../src/index.css";
+import '@fortawesome/fontawesome-free/css/all.min.css'
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -9,3 +10,8 @@ export const parameters = {
     },
   },
 };
+
+export const globalTypes = {
+  darkMode: true,
+};
+

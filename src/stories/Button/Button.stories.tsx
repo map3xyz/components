@@ -1,102 +1,62 @@
 import { ComponentMeta, Story } from "@storybook/react";
-import Button, {
-  ButtonProps,
-  ButtonSize,
-  ButtonVariant,
-} from "../../components/Button/Button";
+import Button, { Props as Map3ButtonProps } from "../../components/Button";
 
 export default {
   title: "Button",
   component: Button,
 } as ComponentMeta<typeof Button>;
 
-const Template: Story<ButtonProps> = (args) => <Button {...args} />;
+const Template: Story<Map3ButtonProps> = (args) => (
+  <Button {...args}>Button</Button>
+);
 
-export const SmallPrimary = Template.bind({});
-SmallPrimary.args = {
-  text: "Submit",
-  variant: ButtonVariant.PRIMARY,
-  size: ButtonSize.SMALL,
+export const Primary = Template.bind({});
+Primary.args = {};
+export const Secondary = Template.bind({});
+Secondary.args = {
+  type: "secondary",
+};
+export const Default = Template.bind({});
+Default.args = {
+  type: "default",
+};
+export const Dashed = Template.bind({});
+Default.args = {
+  type: "dashed",
+};
+export const Text = Template.bind({});
+Text.args = {
+  type: "text",
+};
+export const Link = Template.bind({});
+Link.args = {
+  type: "link",
+};
+export const Loading = Template.bind({});
+Loading.args = {
+  loading: true,
+};
+export const Success = Template.bind({});
+Success.args = {
+  success: true,
+};
+export const Warning = Template.bind({});
+Warning.args = {
+  additionalTypes: "warning",
 };
 
-export const MediumPrimary = Template.bind({});
-MediumPrimary.args = {
-  text: "Submit",
-  variant: ButtonVariant.PRIMARY,
-  size: ButtonSize.MEDIUM,
-  type: "button",
-};
-
-export const MediumSecondary = Template.bind({});
-MediumSecondary.args = {
-  text: "Submit",
-  variant: ButtonVariant.SECONDARY,
-  size: ButtonSize.MEDIUM,
-  type: "button",
-};
-
-export const LargeTertiary = Template.bind({});
-LargeTertiary.args = {
-  text: "Submit",
-  variant: ButtonVariant.TERTIARY,
-  size: ButtonSize.LARGE,
-  type: "button",
-};
-
-export const All = () => {
-  return (
-    <div className="flex gap-6 items-start flex-col" style={{ width: "500px" }}>
-      <div className="flex gap-2 items-start justify-between w-full">
-        <Button
-          text={"Primary Small"}
-          variant={ButtonVariant.PRIMARY}
-          size={ButtonSize.SMALL}
-        ></Button>
-        <Button
-          text={"Primary Medium"}
-          variant={ButtonVariant.PRIMARY}
-          size={ButtonSize.MEDIUM}
-        ></Button>
-        <Button
-          text={"Primary Large"}
-          variant={ButtonVariant.PRIMARY}
-          size={ButtonSize.LARGE}
-        ></Button>
-      </div>
-      <div className="flex gap-2 items-start justify-between w-full">
-        <Button
-          text={"Secondary Small"}
-          variant={ButtonVariant.SECONDARY}
-          size={ButtonSize.SMALL}
-        ></Button>
-        <Button
-          text={"Secondary Medium"}
-          variant={ButtonVariant.SECONDARY}
-          size={ButtonSize.MEDIUM}
-        ></Button>
-        <Button
-          text={"Secondary Large"}
-          variant={ButtonVariant.SECONDARY}
-          size={ButtonSize.LARGE}
-        ></Button>
-      </div>
-      <div className="flex gap-2 items-start justify-between w-full">
-        <Button
-          text={"Tertiary Small"}
-          variant={ButtonVariant.TERTIARY}
-          size={ButtonSize.SMALL}
-        ></Button>
-        <Button
-          text={"Tertiary Medium"}
-          variant={ButtonVariant.TERTIARY}
-          size={ButtonSize.MEDIUM}
-        ></Button>
-        <Button
-          text={"Tertiary Large"}
-          variant={ButtonVariant.TERTIARY}
-          size={ButtonSize.LARGE}
-        ></Button>
-      </div>
+export const All = () => (
+  <div className="flex gap-2 items-start flex-col" style={{ width: "500px" }}>
+    <div className="flex gap-2 items-start w-full">
+      <Button>Primary</Button>
+      <Button type="secondary">Secondary</Button>
+      <Button type="default">Default</Button>
+      <Button type="dashed">Dashed</Button>
+      <Button type="text">Text</Button>
+      <Button type="link">Link</Button>
+      <Button loading>Loading</Button>
+      <Button success>Success</Button>
+      <Button additionalTypes="warning">Warning</Button>
     </div>
-  );
-};
+  </div>
+);

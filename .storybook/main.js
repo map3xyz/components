@@ -3,9 +3,20 @@ module.exports = {
   addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    "@storybook/addon-postcss",
+    "storybook-tailwind-dark-mode",
     "@storybook/preset-create-react-app",
   ],
+  previewHead: (head) => `
+    ${head}
+    <style>
+      html, body {
+        height: 100%;
+      }
+      .dark {
+        background: #000000;
+      }
+    </style>
+  `,
   framework: "@storybook/react",
   core: {
     builder: "webpack5",
