@@ -1,6 +1,6 @@
 import React, { InputHTMLAttributes } from 'react';
 
-const Input: React.FC<Props> = (props) => {
+const Input: React.FC<InputProps> = (props) => {
   const { label, required } = props;
 
   return (
@@ -22,7 +22,7 @@ const Input: React.FC<Props> = (props) => {
   );
 };
 
-export type Props = InputHTMLAttributes<HTMLInputElement> & {
+export type InputProps = InputHTMLAttributes<HTMLInputElement> & {
   label?: string;
 };
 

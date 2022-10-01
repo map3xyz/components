@@ -1,8 +1,6 @@
 import { ComponentMeta, Story } from '@storybook/react';
 
-import Textarea, {
-  Props as TextareaProps,
-} from '../../components/Inputs/Textarea';
+import Textarea, { TextareaProps } from '../../components/Inputs/Textarea';
 
 export default {
   component: Textarea,

@@ -1,6 +1,6 @@
 import React, { SelectHTMLAttributes } from 'react';
 
-const Select: React.FC<Props> = (props) => {
+const Select: React.FC<SelectProps> = (props) => {
   return (
     <div className="flex flex-col dark:text-white">
       {props.label ? (
@@ -25,7 +25,7 @@ const Select: React.FC<Props> = (props) => {
   );
 };
 
-export type Props = SelectHTMLAttributes<HTMLSelectElement> & {
+export type SelectProps = SelectHTMLAttributes<HTMLSelectElement> & {
   label?: string;
   options: { text: string; value: string }[];
 };

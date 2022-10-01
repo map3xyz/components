@@ -1,6 +1,6 @@
 import React, { TextareaHTMLAttributes } from 'react';
 
-const Textarea: React.FC<Props> = (props) => {
+const Textarea: React.FC<TextareaProps> = (props) => {
   const { label } = props;
 
   return (
@@ -19,7 +19,7 @@ const Textarea: React.FC<Props> = (props) => {
   );
 };
 
-export type Props = TextareaHTMLAttributes<HTMLTextAreaElement> & {
+export type TextareaProps = TextareaHTMLAttributes<HTMLTextAreaElement> & {
   label?: string;
 };
 

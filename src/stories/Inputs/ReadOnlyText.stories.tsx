@@ -1,7 +1,7 @@
 import { ComponentMeta, Story } from '@storybook/react';
 
 import ReadOnlyText, {
-  Props as ReadOnlyTextProps,
+  ReadOnlyTextProps,
 } from '../../components/Inputs/ReadOnlyText';
 
 export default {

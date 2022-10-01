@@ -1,6 +1,6 @@
 import { ComponentMeta, Story } from '@storybook/react';
 
-import Select, { Props as SelectProps } from '../../components/Inputs/Select';
+import Select, { SelectProps } from '../../components/Inputs/Select';
 
 export default {
   component: Select,

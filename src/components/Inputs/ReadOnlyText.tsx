@@ -2,7 +2,11 @@ import React, { useEffect, useState } from 'react';
 
 import Button from '../Button';
 
-const ReadOnlyText: React.FC<Props> = ({ copyButton, preview, value }) => {
+const ReadOnlyText: React.FC<ReadOnlyTextProps> = ({
+  copyButton,
+  preview,
+  value,
+}) => {
   const [isCopied, setIsCopied] = useState(false);
 
   useEffect(() => {
@@ -45,7 +49,7 @@ const ReadOnlyText: React.FC<Props> = ({ copyButton, preview, value }) => {
   );
 };
 
-export type Props = {
+export type ReadOnlyTextProps = {
   copyButton?: boolean;
   preview?: React.ReactNode;
   value?: string | number;
