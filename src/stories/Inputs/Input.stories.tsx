@@ -6,10 +6,21 @@ export default {
   component: Input,
 } as ComponentMeta<typeof Input>;
 
-const Template: Story<InputProps> = (args) => <Input />;
+const Template: Story<InputProps> = (args) => (
+  <div className="max-w-sm">
+    <Input {...args} />
+  </div>
+);
 
 export const Primary = Template.bind({});
-Primary.args = {};
+Primary.args = {
+  label: "Label",
+};
+export const Required = Template.bind({});
+Required.args = {
+  label: "Required Field",
+  required: true,
+};
 
 export const All = () => (
   <div className="flex gap-2 items-start flex-col" style={{ width: "500px" }}>

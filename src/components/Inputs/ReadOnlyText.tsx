@@ -16,7 +16,7 @@ const ReadOnlyText: React.FC<Props> = ({ copyButton, preview, value }) => {
   return (
     <div className="relative">
       <input
-        className={`w-full rounded-md border border-neutral-700 bg-neutral-800 py-2 pl-2 text-xs outline-none ring-0 ${
+        className={`w-full rounded-md border dark:text-white dark:border-neutral-700 dark:bg-neutral-900 bg-neutral-100 border-neutral-200 py-2 pl-2 text-xs outline-none ring-0 ${
           copyButton ? 'pr-20' : ''
         }`}
         readOnly
@@ -43,7 +43,7 @@ const ReadOnlyText: React.FC<Props> = ({ copyButton, preview, value }) => {
   )
 }
 
-type Props = {
+export type Props = {
   copyButton?: boolean
   preview?: React.ReactNode
   value?: string | number
