@@ -35,7 +35,7 @@ const ReadOnlyText: React.FC<ReadOnlyTextProps> = ({
               setIsCopied(true);
             }}
             size="tiny"
-            type="secondary"
+            type="default"
           >
             {isCopied ? 'Copied!' : 'Copy'}
           </Button>

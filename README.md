@@ -1,6 +1,15 @@
 # Components
 
-Reusable Component Library
+✨ Reusable Component Library
+
+### Install
+yarn add @map3xyz/components
+
+```
+// src/_app.tsx
+
+import '@map3xyz/components/dist/index.css';
+```
 
 ### Dev
 yarn
