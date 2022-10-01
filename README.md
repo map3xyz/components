@@ -1,3 +1,0 @@
-# Components
-
-Reusable Component Library
