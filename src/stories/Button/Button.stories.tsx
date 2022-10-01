@@ -1,9 +1,10 @@
-import { ComponentMeta, Story } from "@storybook/react";
-import Button, { Props as Map3ButtonProps } from "../../components/Button";
+import { ComponentMeta, Story } from '@storybook/react';
+
+import Button, { Props as Map3ButtonProps } from '../../components/Button';
 
 export default {
-  title: "Button",
   component: Button,
+  title: 'Button',
 } as ComponentMeta<typeof Button>;
 
 const Template: Story<Map3ButtonProps> = (args) => (
@@ -14,23 +15,23 @@ export const Primary = Template.bind({});
 Primary.args = {};
 export const Secondary = Template.bind({});
 Secondary.args = {
-  type: "secondary",
+  type: 'secondary',
 };
 export const Default = Template.bind({});
 Default.args = {
-  type: "default",
+  type: 'default',
 };
 export const Dashed = Template.bind({});
 Default.args = {
-  type: "dashed",
+  type: 'dashed',
 };
 export const Text = Template.bind({});
 Text.args = {
-  type: "text",
+  type: 'text',
 };
 export const Link = Template.bind({});
 Link.args = {
-  type: "link",
+  type: 'link',
 };
 export const Loading = Template.bind({});
 Loading.args = {
@@ -42,12 +43,12 @@ Success.args = {
 };
 export const Warning = Template.bind({});
 Warning.args = {
-  additionalTypes: "warning",
+  additionalTypes: 'warning',
 };
 
 export const All = () => (
-  <div className="flex gap-2 items-start flex-col" style={{ width: "500px" }}>
-    <div className="flex gap-2 items-start w-full">
+  <div className="flex flex-col items-start gap-2" style={{ width: '500px' }}>
+    <div className="flex w-full items-start gap-2">
       <Button>Primary</Button>
       <Button type="secondary">Secondary</Button>
       <Button type="default">Default</Button>

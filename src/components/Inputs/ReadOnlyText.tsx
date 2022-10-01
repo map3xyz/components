@@ -1,22 +1,22 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 
-import Button from '../Button'
+import Button from '../Button';
 
 const ReadOnlyText: React.FC<Props> = ({ copyButton, preview, value }) => {
-  const [isCopied, setIsCopied] = useState(false)
+  const [isCopied, setIsCopied] = useState(false);
 
   useEffect(() => {
     if (isCopied) {
       setTimeout(() => {
-        setIsCopied(false)
-      }, 2000)
+        setIsCopied(false);
+      }, 2000);
     }
-  }, [isCopied])
+  }, [isCopied]);
 
   return (
     <div className="relative">
       <input
-        className={`w-full rounded-md border dark:text-white dark:border-neutral-700 dark:bg-neutral-900 bg-neutral-100 border-neutral-200 py-2 pl-2 text-xs outline-none ring-0 ${
+        className={`w-full rounded-md border border-neutral-200 bg-neutral-100 py-2 pl-2 text-xs outline-none ring-0 dark:border-neutral-700 dark:bg-neutral-900 dark:text-white ${
           copyButton ? 'pr-20' : ''
         }`}
         readOnly
@@ -27,8 +27,8 @@ const ReadOnlyText: React.FC<Props> = ({ copyButton, preview, value }) => {
           <Button
             icon={isCopied ? null : <i className="fa fa-copy" />}
             onClick={() => {
-              navigator.clipboard.writeText(value.toString())
-              setIsCopied(true)
+              navigator.clipboard.writeText(value.toString());
+              setIsCopied(true);
             }}
             size="tiny"
             type="secondary"
@@ -37,16 +37,18 @@ const ReadOnlyText: React.FC<Props> = ({ copyButton, preview, value }) => {
           </Button>
         </div>
       ) : preview ? (
-        <div className="absolute top-1/2 right-2 -translate-y-1/2 ">{preview}</div>
+        <div className="absolute top-1/2 right-2 -translate-y-1/2 ">
+          {preview}
+        </div>
       ) : null}
     </div>
-  )
-}
+  );
+};
 
 export type Props = {
-  copyButton?: boolean
-  preview?: React.ReactNode
-  value?: string | number
-}
+  copyButton?: boolean;
+  preview?: React.ReactNode;
+  value?: string | number;
+};
 
-export default ReadOnlyText
+export default ReadOnlyText;

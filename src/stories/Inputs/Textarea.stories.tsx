@@ -1,9 +1,12 @@
-import { ComponentMeta, Story } from "@storybook/react";
-import Textarea, { Props as TextareaProps } from "../../components/Inputs/Textarea";
+import { ComponentMeta, Story } from '@storybook/react';
+
+import Textarea, {
+  Props as TextareaProps,
+} from '../../components/Inputs/Textarea';
 
 export default {
-  title: "Textarea",
   component: Textarea,
+  title: 'Textarea',
 } as ComponentMeta<typeof Textarea>;
 
 const Template: Story<TextareaProps> = (args) => (
@@ -14,5 +17,5 @@ const Template: Story<TextareaProps> = (args) => (
 
 export const Primary = Template.bind({});
 Primary.args = {
-  label: "Textarea Label",
+  label: 'Textarea Label',
 };

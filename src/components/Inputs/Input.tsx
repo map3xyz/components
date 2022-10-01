@@ -1,4 +1,4 @@
-import React, { InputHTMLAttributes } from "react";
+import React, { InputHTMLAttributes } from 'react';
 
 const Input: React.FC<Props> = (props) => {
   const { label, required } = props;
@@ -15,7 +15,7 @@ const Input: React.FC<Props> = (props) => {
       ) : null}
       <input
         {...props}
-        className={`h-9 rounded-md border dark:border-neutral-700 dark:bg-neutral-900 bg-neutral-100 border-neutral-200 px-2 py-1 text-sm !outline-none !ring-0 transition-all focus:border-neutral-300 dark:focus:border-neutral-200 ${props.className}`}
+        className={`h-9 rounded-md border border-neutral-200 bg-neutral-100 px-2 py-1 text-sm !outline-none !ring-0 transition-all focus:border-neutral-300 dark:border-neutral-700 dark:bg-neutral-900 dark:focus:border-neutral-200 ${props.className}`}
         id={props.name}
       />
     </div>
