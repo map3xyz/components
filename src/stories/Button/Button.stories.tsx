@@ -1,6 +1,8 @@
 import { ComponentMeta, Story } from '@storybook/react';
 
-import Button, { Props as Map3ButtonProps } from '../../components/Button';
+import Button, {
+  Props as Map3ButtonProps,
+} from '../../components/Button/Button';
 
 export default {
   component: Button,

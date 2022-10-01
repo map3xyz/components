@@ -1,4 +1,4 @@
-export * from './Input';
-export * from './ReadOnlyText';
-export * from './Select';
-export * from './Textarea';
+export { default as Input } from './Input';
+export { default as ReadOnlyText } from './ReadOnlyText';
+export { default as Select } from './Select';
+export { default as Textarea } from './Textarea';
