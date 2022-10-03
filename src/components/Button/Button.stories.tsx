@@ -1,12 +1,10 @@
 import { ComponentMeta, Story } from '@storybook/react';
 
-import Button, {
-  Props as Map3ButtonProps,
-} from '../../components/Button/Button';
+import Button, { Props as Map3ButtonProps } from './Button';
 
 export default {
   component: Button,
-  title: 'Button',
+  title: 'General/Button',
 } as ComponentMeta<typeof Button>;
 
 const Template: Story<Map3ButtonProps> = (args) => (

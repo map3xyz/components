@@ -4,7 +4,7 @@ import Select, { SelectProps } from '../../components/Inputs/Select';
 
 export default {
   component: Select,
-  title: 'Select',
+  title: 'Inputs/Select',
 } as ComponentMeta<typeof Select>;
 
 const Template: Story<SelectProps> = (args) => (

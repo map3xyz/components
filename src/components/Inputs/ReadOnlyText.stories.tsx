@@ -6,7 +6,7 @@ import ReadOnlyText, {
 
 export default {
   component: ReadOnlyText,
-  title: 'ReadOnlyText',
+  title: 'Inputs/ReadOnlyText',
 } as ComponentMeta<typeof ReadOnlyText>;
 
 const Template: Story<ReadOnlyTextProps> = (args) => (

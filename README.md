@@ -1,6 +1,40 @@
 # Components
 
-✨ Reusable Component Library
+✨ Reusable Component Library based on @supabase/ui
+
+⚠️ Warning! @supabase/ui is in Alpha and does not yet support theming.
+
+Map3 Components
+- Input
+- Select
+- Textarea
+- ReadOnlyText
+
+Extended Components
+- Buttons
+
+@supabase/ui Components
+- Accordion
+- Alert
+- Badge
+- Divider
+- Dropdown
+- Modal
+- Space
+
+@supabase/ui TODO (add as needed)
+- Listbox
+- Loading
+- Menu
+- Popover
+- Tabs
+- Toast
+- Toggle
+- Upload
+
+@supabase/ui Archive (Deprecated/Don't Use)
+- Typography (use tailwind instead)
+- Icons (use font-awesome instead)
 
 ### Install
 yarn add @map3xyz/components

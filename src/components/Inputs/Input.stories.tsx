@@ -1,10 +1,10 @@
 import { ComponentMeta, Story } from '@storybook/react';
 
-import Input, { InputProps } from '../../components/Inputs/Input';
+import Input, { InputProps } from './Input';
 
 export default {
   component: Input,
-  title: 'Input',
+  title: 'Inputs/Input',
 } as ComponentMeta<typeof Input>;
 
 const Template: Story<InputProps> = (args) => (
@@ -20,6 +20,12 @@ Primary.args = {
 export const Required = Template.bind({});
 Required.args = {
   label: 'Required Field',
+  required: true,
+};
+export const Icon = Template.bind({});
+Icon.args = {
+  icon: <i className="fa fa-search"></i>,
+  label: 'With Icon',
   required: true,
 };
 

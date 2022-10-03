@@ -4,7 +4,7 @@ import Textarea, { TextareaProps } from '../../components/Inputs/Textarea';
 
 export default {
   component: Textarea,
-  title: 'Textarea',
+  title: 'Inputs/Textarea',
 } as ComponentMeta<typeof Textarea>;
 
 const Template: Story<TextareaProps> = (args) => (
