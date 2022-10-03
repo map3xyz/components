@@ -1,9 +1,9 @@
-import { Alert } from './';
+import { Alert } from '.';
 
 export default {
   component: Alert,
   title: 'Displays/Alert',
-};
+} as any;
 
 export const Success = (args: any) => (
   <Alert {...args}>

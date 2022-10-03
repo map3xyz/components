@@ -8,7 +8,7 @@ import { SidePanel } from './index';
 export default {
   component: SidePanel,
   title: 'Overlays/SidePanel',
-};
+} as any;
 
 export const Default = (args: any) => (
   <>

@@ -12,7 +12,7 @@ import { Modal } from './';
 export default {
   component: Modal,
   title: 'Overlays/Modal',
-};
+} as any;
 
 export const Default = (args: any) => (
   <Modal {...args}>
