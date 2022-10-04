@@ -14,9 +14,13 @@ const Toggle: React.FC<Props> = ({
         aria-pressed="false"
         className={`
                 relative mx-3 inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full border-2 
-                border-transparent bg-neutral-400 transition-colors duration-200
+                border-transparent transition-colors duration-200
                  ease-in-out focus:outline-none
-                 ${active ? activeBg || 'bg-orange-600' : ''}
+                 ${
+                   active
+                     ? activeBg || 'bg-orange-600'
+                     : 'bg-neutral-400 dark:bg-neutral-600'
+                 }
               `}
         onClick={() => onToggle()}
         type="button"
