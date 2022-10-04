@@ -1,6 +1,12 @@
 import React from 'react';
 
-const Toggle: React.FC<Props> = ({ active, leftIcon, onToggle, rightIcon }) => {
+const Toggle: React.FC<Props> = ({
+  active,
+  activeBg,
+  leftIcon,
+  onToggle,
+  rightIcon,
+}) => {
   return (
     <div className="flex items-center">
       {leftIcon ? leftIcon : null}
@@ -8,13 +14,9 @@ const Toggle: React.FC<Props> = ({ active, leftIcon, onToggle, rightIcon }) => {
         aria-pressed="false"
         className={`
                 relative mx-3 inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full border-2 
-                border-transparent bg-neutral-700 transition-colors duration-200
+                border-transparent bg-neutral-400 transition-colors duration-200
                  ease-in-out focus:outline-none
-                 ${
-                   active
-                     ? 'bg-neutral-600 dark:bg-neutral-800'
-                     : 'bg-neutral-400 dark:bg-neutral-600'
-                 }
+                 ${active ? activeBg || 'bg-orange-600' : ''}
               `}
         onClick={() => onToggle()}
         type="button"
@@ -35,6 +37,7 @@ const Toggle: React.FC<Props> = ({ active, leftIcon, onToggle, rightIcon }) => {
 
 export type Props = {
   active: boolean;
+  activeBg?: string;
   leftIcon?: React.ReactNode;
   onToggle: () => void;
   rightIcon?: React.ReactNode;

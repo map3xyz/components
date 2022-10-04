@@ -25,6 +25,6 @@ const Template: Story<ToggleProps> = (args) => {
 
 export const Primary = Template.bind({});
 Primary.args = {
-  leftIcon: <IconSun />,
-  rightIcon: <IconMoon />,
+  leftIcon: <IconSun className="dark:text-white" />,
+  rightIcon: <IconMoon className="dark:text-white" />,
 };
