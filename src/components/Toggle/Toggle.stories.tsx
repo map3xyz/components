@@ -2,7 +2,7 @@ import { ComponentMeta, Story } from '@storybook/react';
 import { IconMoon, IconSun } from '@supabase/ui';
 import { useState } from 'react';
 
-import Toggle, { Props as ToggleProps } from '.';
+import Toggle, { Props as ToggleProps } from './Toggle';
 
 export default {
   component: Toggle,
