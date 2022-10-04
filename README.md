@@ -1,6 +1,6 @@
 # Components
 
-✨ Reusable Component Library based on @supabase/ui
+✨ Reusable Component Library based on @supabase/ui and @radix-ui
 
 ⚠️ Warning! @supabase/ui is in Alpha and does not yet support theming.
 
@@ -9,6 +9,7 @@ Map3 Components
 - Select
 - Textarea
 - ReadOnlyText
+- Toggle
 
 Extended Components
 - Buttons
@@ -29,7 +30,6 @@ Extended Components
 - Popover
 - Tabs
 - Toast
-- Toggle
 - Upload
 
 @supabase/ui Archive (Deprecated/Don't Use)

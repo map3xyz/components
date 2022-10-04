@@ -9,8 +9,10 @@ import {
   IconChevronDown,
   IconLogIn,
   IconLogOut,
+  IconMoon,
   IconSearch,
   IconSettings,
+  IconSun,
   IconTrash,
 } from '@supabase/ui';
 
@@ -21,7 +23,9 @@ export {
   IconChevronDown,
   IconLogIn,
   IconLogOut,
+  IconMoon,
   IconSearch,
   IconSettings,
+  IconSun,
   IconTrash,
 };

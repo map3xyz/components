@@ -9,3 +9,4 @@ export * from './Inputs';
 export * from './Modal';
 export * from './Sidepanel';
 export * from './Space';
+export * from './Toggle';

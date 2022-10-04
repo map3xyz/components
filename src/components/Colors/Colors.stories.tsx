@@ -5,8 +5,6 @@ export default {
   title: 'General/Colors',
 };
 
-console.log(colors);
-
 export const All = () => (
   <div
     className="flex items-start gap-2 dark:text-white"

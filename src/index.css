@@ -19,3 +19,7 @@ code {
 .sbui-btn-primary {
   @apply !bg-orange-600;
 }
+
+.sbui-toggle--active {
+  @apply !bg-neutral-600;
+}
