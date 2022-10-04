@@ -43,4 +43,4 @@ export type Props = {
   rightIcon?: React.ReactNode;
 };
 
-export { Toggle };
+export default Toggle;
