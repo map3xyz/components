@@ -4,7 +4,7 @@ import Button, { Props as Map3ButtonProps } from './Button';
 
 export default {
   component: Button,
-  title: 'General/Button',
+  title: 'Inputs/Button',
 } as ComponentMeta<typeof Button>;
 
 const Template: Story<Map3ButtonProps> = (args) => (
