@@ -18,8 +18,8 @@ const Toggle: React.FC<Props> = ({
                  ease-in-out focus:outline-none
                  ${
                    active
-                     ? activeBg || 'bg-orange-600'
-                     : 'bg-neutral-400 dark:bg-neutral-600'
+                     ? activeBg || '!bg-orange-600'
+                     : '!dark:bg-neutral-600 !bg-neutral-400'
                  }
               `}
         onClick={() => onToggle()}
