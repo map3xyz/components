@@ -5,6 +5,8 @@ export * from './components';
 import {
   IconAlertCircle,
   IconArrowUp,
+  IconBell,
+  IconBookOpen,
   IconCheck,
   IconCheckCircle,
   IconChevronDown,
@@ -24,6 +26,8 @@ import {
 export {
   IconAlertCircle,
   IconArrowUp,
+  IconBell,
+  IconBookOpen,
   IconCheck,
   IconCheckCircle,
   IconChevronDown,
