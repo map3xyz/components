@@ -5,6 +5,7 @@ module.exports = {
     "@storybook/addon-essentials",
     "storybook-tailwind-dark-mode",
     "@storybook/preset-create-react-app",
+    "storybook-anima"
   ],
   previewHead: (head) => `
     ${head}
