@@ -51,3 +51,9 @@ yarn storybook
 
 ### Deploy
 Changes to master will trigger an action to deploy the repo to: https://map3xyz.github.io/components
+
+### Releasing
+```
+npm version patch
+npm deploy
+```
