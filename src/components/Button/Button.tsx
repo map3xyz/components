@@ -21,11 +21,11 @@ const Button: React.FC<Props> = ({
       {...rest}
       className={`${
         additionalTypes === 'warning'
-          ? '!bg-red-600 !text-white hover:!bg-red-700'
+          ? 'sbui-btn-warning !bg-red-600 !text-white hover:!bg-red-700'
           : !rest.type
           ? '!bg-orange-600 !text-white hover:!bg-orange-700'
           : ''
-      } ${className} transition-all duration-200`}
+      } ${className} map3 transition-all duration-200`}
     >
       {children}
     </SupabaseUIButton>

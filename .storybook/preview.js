@@ -1,5 +1,6 @@
-import "../src/index.css";
-import '@fortawesome/fontawesome-free/css/all.min.css'
+import '../src/index.css';
+import '../src/storybook.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },

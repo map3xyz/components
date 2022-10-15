@@ -19,7 +19,7 @@
     "tailwindcss/no-custom-classname": [
       1,
       {
-        "whitelist": ["fa", "fa-.*"]
+        "whitelist": ["fa", "fa-.*", "map3", "sbui-btn-warning"]
       }
     ],
     "simple-import-sort/exports": "error",
