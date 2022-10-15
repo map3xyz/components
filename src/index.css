@@ -2,6 +2,54 @@
   @tailwind base;
   @tailwind components;
   @tailwind utilities;
+
+  .sbui-btn-container {
+    @apply inline-flex font-medium;
+  }
+
+  .sbui-btn {
+    @apply relative inline-flex cursor-pointer items-center space-x-2 border border-solid border-transparent text-center outline-none transition duration-200 ease-out;
+    @apply rounded;
+    font-family: inherit;
+    font-weight: inherit;
+  }
+
+  .sbui-btn:focus {
+    @apply outline-none;
+  }
+
+  .sbui-btn-container--shadow {
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+  }
+
+  .sbui-btn--w-full {
+    @apply flex w-full items-center justify-center;
+  }
+
+  .sbui-btn:disabled {
+    @apply cursor-not-allowed opacity-75;
+    pointer-events: none;
+  }
+
+  /*
+    Button sizes
+  */
+
+  .sbui-btn--tiny {
+    @apply px-2.5 py-1.5 text-xs;
+  }
+  .sbui-btn--small {
+    @apply px-3 py-2 text-sm leading-4;
+  }
+  .sbui-btn--medium {
+    @apply px-4 py-2 text-sm;
+  }
+  .sbui-btn--large {
+    @apply px-4 py-2 text-base;
+  }
+  .sbui-btn--xlarge {
+    @apply px-6 py-3 text-base;
+  }
 }
 
 .sbui-toggle--active {

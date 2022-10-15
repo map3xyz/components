@@ -17,18 +17,20 @@ const Button: React.FC<Props> = ({
     rest.icon = <i className="fa fa-check" />;
   }
   return (
-    <SupabaseUIButton
-      {...rest}
-      className={`${
-        additionalTypes === 'warning'
-          ? 'sbui-btn-warning !bg-red-600 !text-white hover:!bg-red-700'
-          : !rest.type
-          ? '!bg-orange-600 !text-white hover:!bg-orange-700'
-          : ''
-      } ${className} map3 transition-all duration-200`}
-    >
-      {children}
-    </SupabaseUIButton>
+    <div className="map3">
+      <SupabaseUIButton
+        {...rest}
+        className={`${
+          additionalTypes === 'warning'
+            ? 'sbui-btn-warning !bg-red-600 !text-white hover:!bg-red-700'
+            : !rest.type
+            ? '!bg-orange-600 !text-white hover:!bg-orange-700'
+            : ''
+        } ${className} transition-all duration-200`}
+      >
+        {children}
+      </SupabaseUIButton>
+    </div>
   );
 };
 
