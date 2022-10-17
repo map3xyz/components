@@ -51,3 +51,6 @@ yarn storybook
 
 ### Deploy
 Changes to master will trigger an action to deploy the repo to: https://map3xyz.github.io/components
+
+### TailwindCSS
+If TailwindCSS is not already a dependency of your application, it is required to wrap you map3xyz/components in a `.map3` class.
