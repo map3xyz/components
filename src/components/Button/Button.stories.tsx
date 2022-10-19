@@ -59,5 +59,22 @@ export const All = () => (
       <Button success>Success</Button>
       <Button additionalTypes="warning">Warning</Button>
     </div>
+    <div className="flex gap-2">
+      <div>
+        <Button size="tiny">tiny</Button>
+      </div>
+      <div>
+        <Button size="small">small</Button>
+      </div>
+      <div>
+        <Button size="medium">medium</Button>
+      </div>
+      <div>
+        <Button size="large">large</Button>
+      </div>
+      <div>
+        <Button size="xlarge">xlarge</Button>
+      </div>
+    </div>
   </div>
 );
