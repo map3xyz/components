@@ -22,7 +22,7 @@ Default.args = {
   type: 'default',
 };
 export const Dashed = Template.bind({});
-Default.args = {
+Dashed.args = {
   type: 'dashed',
 };
 export const Text = Template.bind({});
