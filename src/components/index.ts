@@ -4,6 +4,7 @@ export * from './Badge';
 export * from './Button';
 export * from './Card';
 export * from './Coin';
+export * from './CoinLogo';
 export * from './Divider';
 export * from './Dropdown';
 export * from './Inputs';

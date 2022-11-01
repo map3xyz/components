@@ -2,6 +2,7 @@ import { Asset, Network } from '@map3xyz/assets-helper/dist';
 import React from 'react';
 
 import { Badge } from '../Badge';
+import CoinLogo from '../CoinLogo/CoinLogo';
 import ReadOnlyText from '../Inputs/ReadOnlyText';
 
 const Coin: React.FC<Props> = ({ coin, tmpLogo }) => {
@@ -9,12 +10,12 @@ const Coin: React.FC<Props> = ({ coin, tmpLogo }) => {
     <div className="h-fit w-full rounded-md border border-neutral-200 p-4 dark:border-neutral-700 dark:bg-neutral-800 dark:text-white">
       <div className="relative w-fit">
         {coin?.logo?.svg || coin?.logo?.png ? (
-          <div className="mb-1 flex h-12 w-12 items-center justify-center rounded-full bg-neutral-300 dark:bg-white">
-            <img
-              className="block h-12 rounded-full"
-              src={coin?.logo?.svg || coin?.logo?.png}
-            />
-          </div>
+          <CoinLogo
+            className="mb-1 flex"
+            height="h-12"
+            logo={coin?.logo}
+            width="w-12"
+          />
         ) : (
           <div className="mb-1 flex h-12 w-12 items-center justify-center overflow-hidden rounded-full bg-neutral-700">
             <img className="" id={tmpLogo} />
@@ -118,6 +119,46 @@ const Coin: React.FC<Props> = ({ coin, tmpLogo }) => {
           </div>
         </div>
       ) : null}
+      {coin?.maps && Object.keys(coin.maps).length ? (
+        <div className="mt-2">
+          <h4 className="mb-0.5 flex items-center gap-1 text-sm font-bold">
+            Maps{' '}
+            <span
+              aria-label="Maps represent the cross-chain equivalent of the asset or network."
+              className="hint--top font-normal"
+            >
+              <i className="fa fa-question-circle" />
+            </span>
+          </h4>
+          <div className="group flex flex-wrap">
+            {Object.keys(coin.maps).map((map) => {
+              if (!map) return null;
+              if (!coin?.maps) return null;
+              if (!coin.maps[map as MapType]) return null;
+
+              return Object.values(coin.maps[map as MapType] || {}).map(
+                (mapping) => {
+                  if (!mapping) return null;
+                  return (
+                    <a
+                      aria-label={`${mapping.toNetwork.name} - (${map})`}
+                      className="hint--top -ml-3 rounded-full bg-white p-1 transition-all duration-75 first:-ml-1 group-hover:ml-0 group-hover:first:-ml-1 dark:bg-neutral-800"
+                      href={`/network/${mapping.toNetwork.networkCode}`}
+                      target="_blank"
+                    >
+                      <CoinLogo
+                        height="h-6"
+                        logo={mapping.toNetwork.logo}
+                        width="w-6"
+                      />
+                    </a>
+                  );
+                }
+              );
+            })}
+          </div>
+        </div>
+      ) : null}
       {/* @ts-ignore */}
       {coin.links &&
       /*@ts-ignore*/
@@ -200,8 +241,18 @@ const Coin: React.FC<Props> = ({ coin, tmpLogo }) => {
   );
 };
 
+interface Map {
+  fromAsset: Partial<Asset> | null;
+  fromNetwork: Partial<Network>;
+  toAsset: Partial<Asset> | null;
+  toNetwork: Partial<Network>;
+  type: MapType;
+}
+
+type MapType = 'direct_issuance' | 'bridged' | 'wrapped';
+
 type Props = {
-  coin: Partial<Network | Asset>;
+  coin: Partial<Network | Asset> & { maps?: { [key in MapType]?: Map[] } };
   tmpLogo?: string;
 };
 

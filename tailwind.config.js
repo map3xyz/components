@@ -7,6 +7,11 @@ module.exports = {
   darkMode: 'class',
   plugins: [],
   theme: {
-    extend: {},
+    extend: {
+      spacing: {
+        '-1': '-0.25rem',
+        '-2': '-0.5rem',
+      },
+    },
   },
 };
