@@ -19,19 +19,19 @@ const Toggle: React.FC<Props> = ({
                  ${
                    active
                      ? activeBg || '!bg-orange-600'
-                     : '!dark:bg-neutral-600 !bg-neutral-400'
+                     : '!bg-neutral-400 dark:!bg-neutral-700'
                  }
               `}
         onClick={() => onToggle()}
         type="button"
       >
-        <span className="sr-only">Toggle Themes</span>
+        <span className="sr-only">Toggle Button</span>
         <span
           aria-hidden="true"
           className={`${
-            active ? 'translate-x-5' : 'translate-x-0'
+            active ? 'translate-x-5 dark:!bg-white' : 'translate-x-0'
           } inline-block h-5 w-5 rounded-full
-                  bg-white shadow-lg ring-0 transition duration-200 ease-in-out dark:bg-neutral-200`}
+                  bg-white shadow-lg ring-0 transition duration-200 ease-in-out dark:bg-neutral-400`}
         />
       </button>
       {rightIcon ? rightIcon : null}
