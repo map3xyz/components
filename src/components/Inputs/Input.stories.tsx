@@ -28,6 +28,13 @@ Icon.args = {
   label: 'With Icon',
   required: true,
 };
+export const IconRounded = Template.bind({});
+IconRounded.args = {
+  icon: <i className="fa fa-search"></i>,
+  label: 'With Icon (rounded)',
+  required: true,
+  rounded: true,
+};
 
 export const All = () => (
   <div className="flex flex-col items-start gap-2" style={{ width: '500px' }}>
