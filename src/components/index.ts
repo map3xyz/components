@@ -9,6 +9,7 @@ export * from './Divider';
 export * from './Dropdown';
 export * from './Inputs';
 export * from './Modal';
+export * from './Pill';
 export * from './Sidepanel';
 export * from './Space';
 export * from './Toggle';
