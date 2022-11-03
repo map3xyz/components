@@ -31,6 +31,10 @@
     pointer-events: none;
   }
 
+  .sbui-badge-dot {
+    @apply rounded-full;
+  }
+
   /*
     Button sizes
   */

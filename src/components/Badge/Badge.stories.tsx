@@ -11,6 +11,10 @@ export const withColor = (args: any) => <Badge {...args}>Hello world</Badge>;
 
 export const withDot = (args: any) => <Badge {...args}>Hello world</Badge>;
 
+export const withDotAndColor = (args: any) => (
+  <Badge {...args}>Hello world</Badge>
+);
+
 export const large = (args: any) => <Badge {...args}>Hello world</Badge>;
 
 export const withDotLarge = (args: any) => <Badge {...args}>Hello world</Badge>;
@@ -22,6 +26,11 @@ withColor.args = {
 };
 
 withDot.args = {
+  dot: true,
+};
+
+withDotAndColor.args = {
+  color: 'red',
   dot: true,
 };
 
