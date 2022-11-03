@@ -4,7 +4,7 @@ import { ETH } from './coins/ETH';
 import { MATIC } from './coins/MATIC';
 import { OETH } from './coins/OETH';
 export default {
-  title: 'Utils/Coin',
+  title: 'Utilities/Coin',
 };
 
 export const CoinStory = () => (
