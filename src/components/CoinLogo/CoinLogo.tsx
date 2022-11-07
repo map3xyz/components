@@ -2,7 +2,7 @@ import { Asset } from '@map3xyz/assets-helper/dist';
 import React from 'react';
 
 const CoinLogo: React.FC<Props> = ({ className, height, logo, width }) => {
-  return (
+  return !logo?.png && !logo?.svg ? null : (
     <div
       className={`flex items-center justify-center rounded-full bg-neutral-200 dark:bg-white ${className} ${height} ${width}`} // <--- this line
     >
