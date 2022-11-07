@@ -13,7 +13,9 @@ const Coin: React.FC<Props> = ({ coin, tmpLogo }) => {
           <CoinLogo
             className="mb-1 flex"
             height="h-12"
-            logo={coin?.logo}
+            name={coin.name || ''}
+            png={coin.logo.png}
+            svg={coin.logo.svg}
             width="w-12"
           />
         ) : (
@@ -148,7 +150,9 @@ const Coin: React.FC<Props> = ({ coin, tmpLogo }) => {
                     >
                       <CoinLogo
                         height="h-6"
-                        logo={mapping.toNetwork.logo}
+                        name={mapping.toNetwork.name || ''}
+                        png={mapping.toNetwork.logo?.png}
+                        svg={mapping.toNetwork.logo?.svg}
                         width="w-6"
                       />
                     </a>

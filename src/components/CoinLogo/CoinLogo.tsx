@@ -1,16 +1,21 @@
-import { Asset } from '@map3xyz/assets-helper/dist';
 import React, { useState } from 'react';
 import Blockies from 'react-blockies';
 
-const CoinLogo: React.FC<Props> = ({ className, height, logo, width }) => {
+const CoinLogo: React.FC<Props> = ({
+  className,
+  height,
+  name,
+  png,
+  svg,
+  width,
+}) => {
   const [error, setError] = useState(false);
 
   if (error) {
-    console.log(Number(height.split('h-')[1]) * 4 + 'px');
     return (
       <Blockies
         className={`block rounded-full ${height} ${width}`}
-        seed={logo?.png || logo?.svg}
+        seed={name}
         size={Number(height.split('h-')[1])}
       />
     );
@@ -25,7 +30,7 @@ const CoinLogo: React.FC<Props> = ({ className, height, logo, width }) => {
         onError={() => {
           setError(true);
         }}
-        src={logo?.svg || logo?.png}
+        src={svg || png}
       />
     </div>
   );
@@ -34,7 +39,9 @@ const CoinLogo: React.FC<Props> = ({ className, height, logo, width }) => {
 type Props = {
   className?: string;
   height: string;
-  logo?: Asset['logo'];
+  name: string;
+  png?: string;
+  svg?: string;
   width: string;
 };
 
