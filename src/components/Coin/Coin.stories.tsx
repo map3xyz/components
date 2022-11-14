@@ -15,6 +15,7 @@ export const CoinStory = () => (
         maps: {
           bridged: [
             {
+              // @ts-ignore
               fromAsset: null,
               fromNetwork: ETH,
               toAsset: null,

@@ -3,7 +3,7 @@
   "version": "0.1.44",
   "dependencies": {
     "@fortawesome/fontawesome-free": "6.1.2",
-    "@map3xyz/assets-helper": "^1.0.136",
+    "@map3xyz/assets-helper": "^1.0.171",
     "@supabase/ui": "latest",
     "react": "^18.2.0",
     "react-blockies": "^1.4.1",
