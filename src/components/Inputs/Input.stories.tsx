@@ -31,9 +31,9 @@ Icon.args = {
 export const IconRounded = Template.bind({});
 IconRounded.args = {
   icon: <i className="fa fa-search"></i>,
-  label: 'With Icon (rounded)',
+  isRounded: true,
+  label: 'With Icon (isRounded)',
   required: true,
-  rounded: true,
 };
 
 export const All = () => (

@@ -28,7 +28,7 @@ const Input: React.FC<InputProps> = (props) => {
           icon ? 'pl-8' : ''
         } h-9 border border-neutral-200 bg-neutral-100 px-2 py-1 text-sm !outline-none !ring-0 transition-all focus:border-neutral-300 dark:border-neutral-700 dark:bg-neutral-900 dark:focus:border-neutral-500 ${
           props.className
-        } ${props.rounded ? 'rounded-full' : 'rounded-md'}`}
+        } ${props.isRounded ? 'rounded-full' : 'rounded-md'}`}
         id={props.name}
       />
     </div>
@@ -37,8 +37,8 @@ const Input: React.FC<InputProps> = (props) => {
 
 export type InputProps = InputHTMLAttributes<HTMLInputElement> & {
   icon?: React.ReactNode;
+  isRounded?: boolean;
   label?: string;
-  rounded?: boolean;
 };
 
 export default Input;
