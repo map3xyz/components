@@ -31,10 +31,10 @@ const Pill: React.FC<PropsWithChildren<Props>> = (props) => {
       bg = 'dark:bg-blue-900/50 bg-blue-300/50';
       break;
     default:
-      text = 'text-gray-400 text-gray-700';
-      border = 'border-gray-600 border-gray-300';
-      dotBg = 'bg-gray-400 bg-gray-500';
-      bg = 'bg-gray-600/50 bg-gray-300/50';
+      text = 'dark:text-gray-500 text-gray-700';
+      border = 'dark:border-gray-800 border-gray-300';
+      dotBg = 'dark:bg-gray-500 bg-gray-500';
+      bg = 'dark:bg-gray-900/50 bg-gray-300/50';
       break;
   }
 
