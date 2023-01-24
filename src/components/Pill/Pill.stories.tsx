@@ -22,5 +22,14 @@ export const CoinStory = () => (
     <Pill className="mt-2" color="gray" dot role="button">
       Hello World
     </Pill>
+    <Pill className="mt-2" color="yellow" dot role="button">
+      Hello World
+    </Pill>
+    <Pill className="mt-2" color="red" dot role="button">
+      Hello World
+    </Pill>
+    <Pill className="mt-2" color="blue" dot role="button">
+      Blue da ba di da ba die
+    </Pill>
   </div>
 );

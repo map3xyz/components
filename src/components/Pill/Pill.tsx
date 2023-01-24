@@ -7,34 +7,34 @@ const Pill: React.FC<PropsWithChildren<Props>> = (props) => {
   let dotBg = '';
   switch (props.color) {
     case 'green':
-      text = 'text-green-500';
-      border = 'border-green-800';
-      dotBg = 'bg-green-500';
-      bg = 'bg-green-900/50';
+      text = 'dark:text-green-500 text-green-700';
+      border = 'dark:border-green-800 border-green-300';
+      dotBg = 'dark:bg-green-500 bg-green-500';
+      bg = 'dark:bg-green-900/50 bg-green-300/50';
       break;
     case 'red':
-      text = 'text-red-500';
-      border = 'border-red-800';
-      dotBg = 'bg-red-500';
-      bg = 'bg-red-900/50';
+      text = 'dark:text-red-500 text-red-700';
+      border = 'dark:border-red-800 border-red-300';
+      dotBg = 'dark:bg-red-500 bg-red-500';
+      bg = 'dark:bg-red-900/50 bg-red-300/50';
       break;
     case 'yellow':
-      text = 'text-yellow-500';
-      border = 'border-yellow-800';
-      dotBg = 'bg-yellow-500';
-      bg = 'bg-yellow-900/50';
+      text = 'dark:text-yellow-500 text-yellow-700';
+      border = 'dark:border-yellow-800 border-yellow-300';
+      dotBg = 'dark:bg-yellow-500 bg-yellow-500';
+      bg = 'dark:bg-yellow-900/50 bg-yellow-300/50';
       break;
     case 'blue':
-      text = 'text-blue-500';
-      border = 'border-blue-800';
-      dotBg = 'bg-blue-500';
-      bg = 'bg-blue-900/50';
+      text = 'dark:text-blue-500 text-blue-700';
+      border = 'dark:border-blue-800 border-blue-300';
+      dotBg = 'dark:bg-blue-500 bg-blue-500';
+      bg = 'dark:bg-blue-900/50 bg-blue-300/50';
       break;
     default:
-      text = 'text-gray-400';
-      border = 'border-gray-600';
-      dotBg = 'bg-gray-400';
-      bg = 'bg-gray-600/50';
+      text = 'text-gray-400 text-gray-700';
+      border = 'border-gray-600 border-gray-300';
+      dotBg = 'bg-gray-400 bg-gray-500';
+      bg = 'bg-gray-600/50 bg-gray-300/50';
       break;
   }
 
