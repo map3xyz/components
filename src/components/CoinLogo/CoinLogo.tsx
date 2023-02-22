@@ -5,6 +5,7 @@ const CoinLogo: React.FC<Props> = ({
   className,
   height,
   name,
+  padding,
   png,
   svg,
   width,
@@ -26,7 +27,9 @@ const CoinLogo: React.FC<Props> = ({
       className={`flex items-center justify-center rounded-full bg-neutral-200 dark:bg-white ${className} ${height} ${width}`}
     >
       <img
-        className={`block rounded-full ${height} ${width}`}
+        className={`block rounded-full ${
+          padding ? 'p-1' : ''
+        } ${height} ${width}`}
         onError={() => {
           setError(true);
         }}
@@ -40,6 +43,7 @@ type Props = {
   className?: string;
   height: string;
   name: string;
+  padding?: boolean;
   png?: string;
   svg?: string;
   width: string;

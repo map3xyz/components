@@ -11,6 +11,13 @@ export const CoinStory = () => (
       png="https://raw.githubusercontent.com/map3xyz/assets/master/networks/ethereum/logo.png"
       width="w-10"
     />
+    <CoinLogo
+      height="h-10"
+      name="Ethereum"
+      padding
+      svg="https://raw.githubusercontent.com/map3xyz/assets/master/networks/ethereum/logo.svg"
+      width="w-10"
+    />
     <CoinLogo height="h-10" name="Ethereum" png="" width="w-10" />
   </div>
 );
