@@ -28,7 +28,7 @@ const CoinLogo: React.FC<Props> = ({
     >
       <img
         className={`block rounded-full ${
-          padding ? 'p-1' : ''
+          padding ? 'p-[2px]' : ''
         } ${height} ${width}`}
         onError={() => {
           setError(true);
