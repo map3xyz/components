@@ -35,6 +35,23 @@
     @apply rounded-full;
   }
 
+  /* Radios */
+  .sbui-radio-container {
+    @apply flex items-center pt-0;
+  }
+
+  .sbui-radio-container .sbui-radio {
+    @apply !mr-1;
+  }
+
+  .sbui-radio {
+    @apply !text-orange-600;
+  }
+
+  .sbui-radio:hover {
+    @apply border-orange-600;
+  }
+
   /*
     Button sizes
   */
