@@ -4,6 +4,7 @@ import { Button } from '../Button';
 
 const ReadOnlyText: React.FC<ReadOnlyTextProps> = ({
   copyButton,
+  onCopyButtonClicked,
   preview,
   value,
 }) => {
@@ -33,6 +34,7 @@ const ReadOnlyText: React.FC<ReadOnlyTextProps> = ({
             onClick={() => {
               navigator.clipboard.writeText(value.toString());
               setIsCopied(true);
+              onCopyButtonClicked?.();
             }}
             size="tiny"
             type="default"
@@ -51,6 +53,7 @@ const ReadOnlyText: React.FC<ReadOnlyTextProps> = ({
 
 export type ReadOnlyTextProps = {
   copyButton?: boolean;
+  onCopyButtonClicked?: () => void;
   preview?: React.ReactNode;
   value?: string | number;
 };
