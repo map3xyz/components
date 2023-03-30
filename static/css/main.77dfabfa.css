@@ -712,12 +712,12 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 }.map3 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}.map3 .text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }.map3 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}.map3 .text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }.map3 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -6035,6 +6035,15 @@ Removes the default spacing and border for appropriate elements.
   --tw-border-opacity: 1;
   border-color: rgb(115 115 115 / var(--tw-border-opacity));
 }
+
+@media (min-width: 640px) {.sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }.sm\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
 /*
 ! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
 *//*
@@ -7042,13 +7051,13 @@ video {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 .text-base {
   font-size: 1rem;
@@ -7430,5 +7439,18 @@ code {
   border-color: rgb(115 115 115 / var(--tw-border-opacity));
 }
 
+@media (min-width: 640px) {
 
-/*# sourceMappingURL=main.44e110d4.css.map*/
+  .sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .sm\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+
+/*# sourceMappingURL=main.77dfabfa.css.map*/
