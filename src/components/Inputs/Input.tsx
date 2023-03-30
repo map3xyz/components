@@ -18,7 +18,7 @@ const Input: React.FC<InputProps> = (props) => {
       ) : null}
       {label ? (
         <label
-          className="mb-1 flex h-4 items-center gap-0.5 sm:text-sm sm:text-xs"
+          className="mb-1 flex h-4 items-center gap-0.5 text-sm sm:text-xs"
           htmlFor={props.name}
         >
           {props.label}{' '}

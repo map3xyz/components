@@ -24,7 +24,7 @@ export const All = () => (
                   (shade) => (
                     <div className="flex items-center gap-2">
                       <div
-                        className={`whitespace-nowrap rounded-md px-2 py-1 sm:text-xs sm:text-sm ${
+                        className={`whitespace-nowrap rounded-md px-2 py-1 text-xs ${
                           Number(shade) > 400 ? 'text-white' : 'text-black'
                         }`}
                         style={{

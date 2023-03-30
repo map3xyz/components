@@ -4,7 +4,7 @@ const Select: React.FC<SelectProps> = (props) => {
   return (
     <div className="flex flex-col dark:text-white">
       {props.label ? (
-        <label className="mb-1 sm:text-sm sm:text-xs" htmlFor={props.name}>
+        <label className="mb-1 text-sm sm:text-xs" htmlFor={props.name}>
           {props.label}
         </label>
       ) : null}
