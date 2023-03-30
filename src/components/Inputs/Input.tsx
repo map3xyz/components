@@ -18,17 +18,18 @@ const Input: React.FC<InputProps> = (props) => {
       ) : null}
       {label ? (
         <label
-          className="mb-1 flex h-4 items-center gap-0.5 text-xs"
+          className="mb-1 flex h-4 items-center gap-0.5 sm:text-sm sm:text-xs"
           htmlFor={props.name}
         >
-          {props.label} {required ? <span className="text-sm">*</span> : null}
+          {props.label}{' '}
+          {required ? <span className="sm:text-sm">*</span> : null}
         </label>
       ) : null}
       <input
         {...rest}
         className={`${
           icon ? 'pl-8' : ''
-        } h-9 border border-neutral-200 bg-neutral-100 px-2 py-1 text-sm !outline-none !ring-0 transition-all focus:border-neutral-300 dark:border-neutral-700 dark:bg-neutral-900 dark:focus:border-neutral-500 ${
+        } h-9 border border-neutral-200 bg-neutral-100 px-2 py-1 !outline-none !ring-0 transition-all focus:border-neutral-300 dark:border-neutral-700 dark:bg-neutral-900 dark:focus:border-neutral-500 sm:text-sm ${
           props.className
         } ${props.rounded ? 'rounded-full' : 'rounded-md'}`}
         id={props.name}

@@ -43,34 +43,34 @@ const Coin: React.FC<Props> = ({ coin, tmpLogo }) => {
         </Badge>
       </h1>
       <div>
-        <h4 className="mt-2 mb-0.5 text-sm font-bold">Asset ID</h4>
+        <h4 className="mt-2 mb-0.5 font-bold sm:text-sm">Asset ID</h4>
         <ReadOnlyText copyButton value={coin?.id} />
       </div>
       <div className="mt-2 flex w-full gap-2">
         <div className="w-full">
-          <h4 className="mb-0.5 text-sm font-bold">Symbol</h4>
+          <h4 className="mb-0.5 font-bold sm:text-sm">Symbol</h4>
           <ReadOnlyText value={coin?.symbol} />
         </div>
         {coin?.type === 'network' ? (
           <div className="w-full">
-            <h4 className="mb-0.5 text-sm font-bold">Chain ID</h4>
+            <h4 className="mb-0.5 font-bold sm:text-sm">Chain ID</h4>
             <ReadOnlyText value={(coin as Network).identifiers?.chainId} />
           </div>
         ) : null}
       </div>
       <div className="mt-2 flex w-full gap-2">
         <div className="w-full">
-          <h4 className="mb-0.5 text-sm font-bold">Decimals</h4>
+          <h4 className="mb-0.5 font-bold sm:text-sm">Decimals</h4>
           <ReadOnlyText value={coin.decimals} />
         </div>
         <div className="w-full">
-          <h4 className="mb-0.5 whitespace-nowrap text-sm font-bold">
+          <h4 className="mb-0.5 whitespace-nowrap font-bold sm:text-sm">
             Network Code
           </h4>
           <ReadOnlyText value={coin?.networkCode} />
         </div>
         <div className="w-full">
-          <h4 className="mb-0.5 text-sm font-bold">Color</h4>
+          <h4 className="mb-0.5 font-bold sm:text-sm">Color</h4>
           <ReadOnlyText
             preview={
               <div
@@ -84,18 +84,18 @@ const Coin: React.FC<Props> = ({ coin, tmpLogo }) => {
       </div>
       {coin.type === 'asset' ? (
         <div className="mt-2">
-          <h4 className="mb-0.5 text-sm font-bold">Address</h4>
+          <h4 className="mb-0.5 font-bold sm:text-sm">Address</h4>
           <ReadOnlyText copyButton value={coin?.address} />
         </div>
       ) : (
         <div className="mt-2 flex w-full gap-2">
           <div className="w-full">
-            <h4 className="mb-0.5 text-sm font-bold">Address Regex</h4>
+            <h4 className="mb-0.5 font-bold sm:text-sm">Address Regex</h4>
             <ReadOnlyText copyButton value={(coin as Network).regex?.address} />
           </div>
           {(coin as Network).regex?.memo ? (
             <div className="w-full">
-              <h4 className="mb-0.5 text-sm font-bold">Memo Regex</h4>
+              <h4 className="mb-0.5 font-bold sm:text-sm">Memo Regex</h4>
               <ReadOnlyText copyButton value={(coin as Network).regex?.memo} />
             </div>
           ) : null}
@@ -103,13 +103,13 @@ const Coin: React.FC<Props> = ({ coin, tmpLogo }) => {
       )}
       {coin?.description?.en ? (
         <div className="mt-2">
-          <h4 className="mb-0.5 text-sm font-bold">Description</h4>
-          <p className="text-sm leading-4">{coin?.description?.en || ''}</p>
+          <h4 className="mb-0.5 font-bold sm:text-sm">Description</h4>
+          <p className="leading-4 sm:text-sm">{coin?.description?.en || ''}</p>
         </div>
       ) : null}
       {coin.tags && coin.tags.length > 0 ? (
         <div className="mt-2">
-          <h4 className="mb-0.5 text-sm font-bold">Tags</h4>
+          <h4 className="mb-0.5 font-bold sm:text-sm">Tags</h4>
           <div className="flex flex-wrap gap-1">
             {coin.tags?.map((tag) => {
               return (
@@ -123,7 +123,7 @@ const Coin: React.FC<Props> = ({ coin, tmpLogo }) => {
       ) : null}
       {coin?.maps && Object.keys(coin.maps).length ? (
         <div className="mt-2">
-          <h4 className="mb-0.5 flex items-center gap-1 text-sm font-bold">
+          <h4 className="mb-0.5 flex items-center gap-1 font-bold sm:text-sm">
             Maps{' '}
             <span
               aria-label="Maps represent the cross-chain equivalent of the asset or network."
@@ -168,7 +168,7 @@ const Coin: React.FC<Props> = ({ coin, tmpLogo }) => {
       /*@ts-ignore*/
       Object.keys(coin?.links).filter((link) => coin.links[link]).length > 0 ? (
         <div className="mt-2">
-          <h4 className="mb-0.5 text-sm font-bold">Links</h4>
+          <h4 className="mb-0.5 font-bold sm:text-sm">Links</h4>
           <div className="flex gap-2">
             {coin.links &&
               Object.keys(coin.links)

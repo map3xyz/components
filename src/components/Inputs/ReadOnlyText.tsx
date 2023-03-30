@@ -21,7 +21,7 @@ const ReadOnlyText: React.FC<ReadOnlyTextProps> = ({
   return (
     <div className="relative">
       <input
-        className={`w-full rounded-md border border-neutral-200 bg-neutral-100 py-2 pl-2 text-xs outline-none ring-0 dark:border-neutral-700 dark:bg-neutral-900 dark:text-white ${
+        className={`w-full rounded-md border border-neutral-200 bg-neutral-100 py-2 pl-2 outline-none ring-0 dark:border-neutral-700 dark:bg-neutral-900 dark:text-white sm:text-sm sm:text-xs ${
           copyButton ? 'pr-20' : ''
         }`}
         readOnly

@@ -41,7 +41,7 @@ const Pill: React.FC<PropsWithChildren<Props>> = (props) => {
   return (
     <div
       {...props}
-      className={`flex items-center gap-1 rounded-full border py-1 px-2 text-xs font-semibold ${text} ${border} ${bg} ${props.className}`}
+      className={`flex items-center gap-1 rounded-full border py-1 px-2 font-semibold sm:text-sm sm:text-xs ${text} ${border} ${bg} ${props.className}`}
     >
       {props.dot ? (
         <span className={`h-2 w-2 rounded-full ${dotBg}`}></span>

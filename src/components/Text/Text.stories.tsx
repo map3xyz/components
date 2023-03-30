@@ -11,7 +11,7 @@ export const Size = () => (
       <div className="flex w-full flex-col items-start">
         <div className="font-bold underline">Text Size</div>
         <div className="flex flex-col items-start">
-          <div className="text-xs">text-xs</div>
+          <div className="text-xs">sm:text-sm</div>
           <div className="text-sm">text-sm</div>
           <div className="text-base">text-base</div>
           <div className="text-lg">text-lg</div>
