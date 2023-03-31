@@ -4,7 +4,7 @@ export default {
   title: 'Displays/Pill',
 };
 
-export const CoinStory = () => (
+export const PillStory = () => (
   <div className="flex w-full flex-col items-start">
     <Pill color="green">Hello World</Pill>
     <Pill className="mt-2" color="green" dot>
