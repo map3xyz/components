@@ -5,6 +5,7 @@ module.exports = {
     './node_modules/@supabase/ui/dist/esm/components/**/*.{js,jsx,ts,tsx}',
   ],
   darkMode: 'class',
+  important: '.map3',
   plugins: [],
   theme: {
     extend: {

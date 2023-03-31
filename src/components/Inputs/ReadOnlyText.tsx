@@ -28,7 +28,7 @@ const ReadOnlyText: React.FC<ReadOnlyTextProps> = ({
         value={value}
       />
       {copyButton && value ? (
-        <div className="absolute top-1/2 right-0.5 -translate-y-1/2 ">
+        <div className="absolute right-0.5 top-1/2 -translate-y-1/2 ">
           <Button
             icon={isCopied ? null : <i className="fa fa-copy" />}
             onClick={() => {
@@ -43,7 +43,7 @@ const ReadOnlyText: React.FC<ReadOnlyTextProps> = ({
           </Button>
         </div>
       ) : preview ? (
-        <div className="absolute top-1/2 right-2 -translate-y-1/2 ">
+        <div className="absolute right-2 top-1/2 -translate-y-1/2 ">
           {preview}
         </div>
       ) : null}

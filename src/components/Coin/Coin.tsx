@@ -24,7 +24,7 @@ const Coin: React.FC<Props> = ({ coin, tmpLogo }) => {
           </div>
         )}
         {coin.type ? (
-          <div className="absolute -top-2.5 -right-2.5 flex h-3 w-3 items-center justify-center rounded-full border border-blue-400 bg-blue-200 p-3">
+          <div className="absolute -right-2.5 -top-2.5 flex h-3 w-3 items-center justify-center rounded-full border border-blue-400 bg-blue-200 p-3">
             {
               <span
                 aria-label={coin.type === 'network' ? 'Network' : 'Asset'}
@@ -43,7 +43,7 @@ const Coin: React.FC<Props> = ({ coin, tmpLogo }) => {
         </Badge>
       </h1>
       <div>
-        <h4 className="mt-2 mb-0.5 font-bold sm:text-sm">Asset ID</h4>
+        <h4 className="mb-0.5 mt-2 font-bold sm:text-sm">Asset ID</h4>
         <ReadOnlyText copyButton value={coin?.id} />
       </div>
       <div className="mt-2 flex w-full gap-2">

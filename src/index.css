@@ -1,23 +1,8 @@
-.map3 {
+@tailwind utilities;
+@tailwind components;
+
+.map3 {  
   @tailwind base;
-  @tailwind utilities;
-  @tailwind components;
-
-  /* nested tailwind utilities does not handle breakpoints */
-  @media (min-width: 640px) {
-    .sm\:text-xs {
-        font-size: 0.75rem;
-        line-height: 1rem;
-    }
-  }
-
-  @media (min-width: 640px) {
-    .sm\:text-sm {
-        font-size: 0.875rem;
-        line-height: 1rem;
-    }
-  }
-  
   .sbui-btn-container {
     @apply inline-flex font-medium;
   }
