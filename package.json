@@ -3,7 +3,6 @@
   "version": "0.1.61",
   "dependencies": {
     "@fortawesome/fontawesome-free": "6.1.2",
-    "@map3xyz/assets-helper": "^1.0.171",
     "@supabase/ui": "latest",
     "react": "^18.2.0",
     "react-blockies": "^1.4.1",
@@ -79,5 +78,6 @@
     "storybook-anima": "^1.40.0",
     "storybook-tailwind-dark-mode": "^1.0.15",
     "webpack": "^5.67.0"
-  }
+  },
+  "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
 }
