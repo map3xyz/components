@@ -3,7 +3,6 @@ export * from './Alert';
 export * from './Badge';
 export * from './Button';
 export * from './Card';
-export * from './Coin';
 export * from './CoinAndNetworkLogo';
 export * from './CoinLogo';
 export * from './CryptoAddress';
